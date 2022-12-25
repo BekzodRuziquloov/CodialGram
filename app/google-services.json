@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858225530540",
+    "project_id": "codialgram-bf870",
+    "storage_bucket": "codialgram-bf870.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858225530540:android:c0ac0ac781e706fa24b109",
+        "android_client_info": {
+          "package_name": "space.beka.newcodialgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858225530540-1amc5bb3h7bshls58hj47s53ke5ulp10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVKzTCqwcLnNUOaHH76VLNEUpMrwwq5fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858225530540-1amc5bb3h7bshls58hj47s53ke5ulp10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

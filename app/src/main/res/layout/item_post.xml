@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#A19B9B"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:id="@+id/frame_media"
+      app:layout_constraintTop_toTopOf="parent"
+      android:padding="10dp"
+      app:layout_constraintBottom_toTopOf="@+id/tv_name_item"
+>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_image_post"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        />
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_video_view"
+        android:visibility="gone"
+        />
+  </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name_item"
+        android:text="Beka  : "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintRight_toLeftOf="@+id/tv_desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_media"
+        app:layout_constraintBottom_toTopOf="@+id/like_tv"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_desc"
+        android:text="Dars Jarayonida"
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toBottomOf="@id/frame_media"
+        app:layout_constraintLeft_toRightOf="@id/tv_name_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_like_count"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/like_tv"
+        android:textSize="20sp"
+        android:text="Likelar soni  : "
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_item"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_like_count"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_like_count"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/like_tv"
+        android:text="200 ta "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Date"
+      android:id="@+id/tv_date"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/frame_media"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/tv_desc"
+    android:textColor="@color/black"
+    app:layout_constraintHorizontal_bias="0.4"
+    app:layout_constraintVertical_bias="0.01"
+    />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/signingFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="space.beka.newcodialgram.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/signingFragment"
+        android:name="space.beka.newcodialgram.fragments.SigningFragment"
+        android:label="fragment_signing"
+        tools:layout="@layout/fragment_signing" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="space.beka.newcodialgram.fragments.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+</navigation>
